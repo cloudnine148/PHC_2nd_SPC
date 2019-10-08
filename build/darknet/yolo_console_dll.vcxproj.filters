@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\yolo_console_dll.cpp" />
+    <ClCompile Include="DetectionProcessing.cpp">
+      <Filter>01.Detection</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCommunication.cpp">
+      <Filter>02.DataCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPort.cpp">
+      <Filter>02.DataCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Validation.cpp">
+      <Filter>03.Validation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\yolo_v2_class.hpp" />
+    <ClInclude Include="common.hpp">
+      <Filter>01.Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="DetectionProcessing.hpp">
+      <Filter>01.Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialPort.hpp">
+      <Filter>02.DataCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="Validation.hpp">
+      <Filter>03.Validation</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCommunication.hpp">
+      <Filter>02.DataCommunication</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="x64\yolo_cpp_dll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="01.Detection">
+      <UniqueIdentifier>{65b4ad67-45ae-4381-ab9b-a499592268f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.DataCommunication">
+      <UniqueIdentifier>{165f750c-be57-46a0-982d-2a2efbc039a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Validation">
+      <UniqueIdentifier>{e5673e75-13ea-4bd3-90e0-3d850f02a944}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
